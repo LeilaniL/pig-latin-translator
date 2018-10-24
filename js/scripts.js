@@ -2,10 +2,9 @@
 var outputArray = [];
 var piggy = function(wordsArray) {
   wordsArray.forEach(function(word) {
-    var char = word.search(/[aeiou]/g);
+    var char = word.search(/[aeiouAEIOU]/gi);
     var charQU = word.search(/(qu)/g);
     var charNUM = word.search(/\d/g);
-    //debugger;
     if (charNUM === 0) {
       switch(charNUM) {
         default:
@@ -15,7 +14,7 @@ var piggy = function(wordsArray) {
     } else if (charQU === 0) {
       switch(charQU) {
         default:
-          word = word.replace("qu", "") + word.substr(charQU,2) + "ay";  
+          word = word.substr(2) + "quay";
           break;
       }
     } else {
