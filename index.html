@@ -7,19 +7,22 @@
   </head>
   <body>
     <div class="container">
-      <h1>Pig Latin Translator</h1>
+      <h1 id="header">Pig Latin Translator</h1>
 
       <form id="formInput">
         <div class="form-group">
+          <hr>
           <label for="userInput">Enter the sentence you would like to be translated into pig latin:</label>
+          <br>
           <input id="userInput" type="text">
+          <hr>
         </div>
 
         <button type="submit" class="btn">Translate!</button>
       </form>
 
-      <div id="result">
-        <p><span id="userOutput"></span></p>
+      <div class="well" id="result">
+        <span id="userOutput"></span>
       </div>
     </div>
   </body>

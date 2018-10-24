@@ -1,0 +1,29 @@
+#header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-color: pink;
+}
+
+#userInput {
+  height: 50px;
+  width: 400px;
+}
+
+.well {
+  display: none;
+  background-color: #FF69B4;
+  width: 800px;
+  height: 400px;
+  color: black;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+

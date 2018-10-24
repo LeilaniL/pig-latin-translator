@@ -42,6 +42,7 @@ $(document).ready(function() {
     piggy(wordsArray);
     newOutputArray = outputArray.join(" ");
     $("#userOutput").text(newOutputArray);
+    $(".well").show();
 
   });
 });
